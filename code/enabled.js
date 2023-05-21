@@ -5,7 +5,7 @@ for(var i = 0; i < 12; i ++)
 
 outlets = 4;
 var stored_ind = 0;
-var types_count = 5;
+var types_count = 6;
 
 function msg_int(ind)
 {

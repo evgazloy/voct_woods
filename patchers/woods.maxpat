@@ -4941,7 +4941,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-284",
-					"items" : [ "g_play", ",", "g_chunker", ",", "g_waver", ",", "e_am", ",", "e_vst" ],
+					"items" : [ "g_play", ",", "g_chunker", ",", "g_waver", ",", "g_grains", ",", "e_am", ",", "e_vst" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5456,7 +5456,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_2",
+					"buffername" : "",
 					"id" : "obj-169",
 					"labels" : 0,
 					"maxclass" : "waveform~",
@@ -5491,7 +5491,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_1",
+					"buffername" : "",
 					"id" : "obj-172",
 					"labels" : 0,
 					"maxclass" : "waveform~",
@@ -5526,7 +5526,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_0",
+					"buffername" : "",
 					"id" : "obj-175",
 					"labels" : 0,
 					"maxclass" : "waveform~",
@@ -5562,7 +5562,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_5",
+					"buffername" : "",
 					"id" : "obj-166",
 					"labels" : 0,
 					"maxclass" : "waveform~",
@@ -5597,7 +5597,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_4",
+					"buffername" : "",
 					"id" : "obj-163",
 					"labels" : 0,
 					"maxclass" : "waveform~",
@@ -5764,7 +5764,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "buf_3",
+					"buffername" : "",
 					"id" : "obj-150",
 					"labels" : 0,
 					"maxclass" : "waveform~",

@@ -4941,7 +4941,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-284",
-					"items" : [ "g_play", ",", "g_chunker", ",", "g_waver", ",", "g_grains", ",", "e_am", ",", "e_vst" ],
+					"items" : [ "g_play", ",", "g_chunker", ",", "g_waver", ",", "g_grains", ",", "g_input", ",", "e_am", ",", "e_looper", ",", "e_vst" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

@@ -5445,16 +5445,13 @@
 					"dontreplace" : 1,
 					"id" : "obj-196",
 					"ignoreclick" : 1,
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 415.5, 521.5, 137.5, 62.0 ],
+					"patching_rect" : [ 415.5, 521.5, 137.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 90.0, 500.0, 256.0, 35.0 ],
-					"text" : "PSE_GGV1_FX_One_Shot_Ambience_Tokyo_Airport_Departure_Lobby.wav"
+					"presentation_rect" : [ 90.0, 500.0, 256.0, 22.0 ]
 				}
 
 			}
@@ -5463,15 +5460,13 @@
 					"dontreplace" : 1,
 					"id" : "obj-199",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 415.5, 319.0, 137.5, 35.0 ],
+					"patching_rect" : [ 415.5, 319.0, 137.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 396.0, 256.0, 22.0 ],
-					"text" : "AT3_85_kit_loop_blame_bass_Cmin.wav"
+					"presentation_rect" : [ 90.0, 396.0, 256.0, 22.0 ]
 				}
 
 			}
@@ -5480,15 +5475,13 @@
 					"dontreplace" : 1,
 					"id" : "obj-190",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.5, 728.5, 137.5, 35.0 ],
+					"patching_rect" : [ 133.5, 728.5, 137.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 291.0, 256.5, 22.0 ],
-					"text" : "AT3_70_kit_loop_memory_piano_2_Amin.wav"
+					"presentation_rect" : [ 90.0, 291.0, 256.5, 22.0 ]
 				}
 
 			}
@@ -5497,15 +5490,13 @@
 					"dontreplace" : 1,
 					"id" : "obj-187",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.5, 521.5, 137.5, 35.0 ],
+					"patching_rect" : [ 133.5, 521.5, 137.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 186.0, 256.0, 22.0 ],
-					"text" : "AT3_85_kit_loop_blame_ambience_Cmin.wav"
+					"presentation_rect" : [ 90.0, 186.0, 256.0, 22.0 ]
 				}
 
 			}
@@ -5580,15 +5571,13 @@
 					"dontreplace" : 1,
 					"id" : "obj-178",
 					"ignoreclick" : 1,
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 299.5, 137.5, 35.0 ],
+					"patching_rect" : [ 131.0, 299.5, 137.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 81.0, 256.0, 22.0 ],
-					"text" : "AT3_70_drum_loop_prime_foley.wav"
+					"presentation_rect" : [ 90.0, 81.0, 256.0, 22.0 ]
 				}
 
 			}
@@ -8860,42 +8849,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-286::obj-11.1::obj-21" : [ "mcs.vst~[6]", "mcs.vst~", 0 ],
-			"obj-286::obj-11.1::obj-30" : [ "number[27]", "number", 0 ],
-			"obj-286::obj-11.1::obj-31" : [ "number[26]", "number", 0 ],
-			"obj-286::obj-11.1::obj-32" : [ "number[29]", "number", 0 ],
-			"obj-286::obj-11.1::obj-33" : [ "number[28]", "number", 0 ],
-			"obj-286::obj-12.1::obj-21" : [ "mcs.vst~[5]", "mcs.vst~", 0 ],
-			"obj-286::obj-12.1::obj-30" : [ "number[24]", "number", 0 ],
-			"obj-286::obj-12.1::obj-31" : [ "number[23]", "number", 0 ],
-			"obj-286::obj-12.1::obj-32" : [ "number[22]", "number", 0 ],
-			"obj-286::obj-12.1::obj-33" : [ "number[25]", "number", 0 ],
-			"obj-286::obj-13.1::obj-21" : [ "mcs.vst~[4]", "mcs.vst~", 0 ],
-			"obj-286::obj-13.1::obj-30" : [ "number[20]", "number", 0 ],
-			"obj-286::obj-13.1::obj-31" : [ "number[19]", "number", 0 ],
-			"obj-286::obj-13.1::obj-32" : [ "number[18]", "number", 0 ],
-			"obj-286::obj-13.1::obj-33" : [ "number[21]", "number", 0 ],
-			"obj-286::obj-14.1::obj-21" : [ "mcs.vst~[3]", "mcs.vst~", 0 ],
-			"obj-286::obj-14.1::obj-30" : [ "number[16]", "number", 0 ],
-			"obj-286::obj-14.1::obj-31" : [ "number[15]", "number", 0 ],
-			"obj-286::obj-14.1::obj-32" : [ "number[14]", "number", 0 ],
-			"obj-286::obj-14.1::obj-33" : [ "number[17]", "number", 0 ],
-			"obj-286::obj-4.1::obj-93" : [ "toggle", "toggle", 0 ],
-			"obj-286::obj-7.1::obj-21" : [ "mcs.vst~[2]", "mcs.vst~", 0 ],
-			"obj-286::obj-7.1::obj-30" : [ "number[10]", "number", 0 ],
-			"obj-286::obj-7.1::obj-31" : [ "number[13]", "number", 0 ],
-			"obj-286::obj-7.1::obj-32" : [ "number[12]", "number", 0 ],
-			"obj-286::obj-7.1::obj-33" : [ "number[11]", "number", 0 ],
-			"obj-286::obj-8.1::obj-21" : [ "mcs.vst~[1]", "mcs.vst~", 0 ],
-			"obj-286::obj-8.1::obj-30" : [ "number[6]", "number", 0 ],
-			"obj-286::obj-8.1::obj-31" : [ "number[9]", "number", 0 ],
-			"obj-286::obj-8.1::obj-32" : [ "number[8]", "number", 0 ],
-			"obj-286::obj-8.1::obj-33" : [ "number[7]", "number", 0 ],
-			"obj-286::obj-9.1::obj-21" : [ "mcs.vst~", "mcs.vst~", 0 ],
-			"obj-286::obj-9.1::obj-30" : [ "number[2]", "number", 0 ],
-			"obj-286::obj-9.1::obj-31" : [ "number[3]", "number", 0 ],
-			"obj-286::obj-9.1::obj-32" : [ "number[4]", "number", 0 ],
-			"obj-286::obj-9.1::obj-33" : [ "number[5]", "number", 0 ],
 			"obj-431" : [ "number", "number", 0 ],
 			"obj-9::obj-103" : [ "live.dial[28]", "R", 0 ],
 			"obj-9::obj-104" : [ "live.dial[46]", "L", 0 ],
@@ -9230,6 +9183,10 @@
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "filemanager.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "labelsb.js",

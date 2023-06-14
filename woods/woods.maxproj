@@ -2,8 +2,8 @@
 	"name" : "woods",
 	"version" : 1,
 	"creationdate" : 3766746248,
-	"modificationdate" : 3769420015,
-	"viewrect" : [ 23.0, 161.0, 300.0, 500.0 ],
+	"modificationdate" : 3769611436,
+	"viewrect" : [ 22.0, 161.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -12,7 +12,6 @@
 		"patchers" : 		{
 			"woods.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
 				"toplevel" : 1
 			}
 ,

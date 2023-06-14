@@ -2,7 +2,7 @@
 	"name" : "woods",
 	"version" : 1,
 	"creationdate" : 3766746248,
-	"modificationdate" : 3768285165,
+	"modificationdate" : 3769420015,
 	"viewrect" : [ 23.0, 161.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -15,6 +15,54 @@
 				"local" : 1,
 				"toplevel" : 1
 			}
+,
+			"g_input.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"e_looper.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"g_drums.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"vo.random.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"vo.quant.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"g_grains.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"g_waver.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"g_play.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"g_chunker.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"extra.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"e_vst.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"e_am.maxpat" : 			{
+				"kind" : "patcher"
+			}
 
 		}
 ,
@@ -23,6 +71,10 @@
 		}
 ,
 		"externals" : 		{
+
+		}
+,
+		"other" : 		{
 
 		}
 
@@ -36,7 +88,7 @@
 
 	}
 ,
-	"detailsvisible" : 0,
+	"detailsvisible" : 1,
 	"amxdtype" : 0,
 	"readonly" : 0,
 	"devpathtype" : 0,

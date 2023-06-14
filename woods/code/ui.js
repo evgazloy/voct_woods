@@ -1,15 +1,24 @@
-outlets = 3;
+outlets = 4;
 sketch.default2d();
 
 var backColor = [0.357, 0.357, 0.357, 1.000];
 var treeColor = [0.769, 0.875, 0.890, 1.000];
 var activeColor = [0.769, 0.875, 0.890, 0.2];
 var holdColor = [0.702, 0.412, 0.412, 0.5];
+var mrecColor = [1, 1, 1, 1];
 var mcoord = [0., 0., 0.];
 var hovered = -1;
 
 var forest = [];
 var maxNumber = 256;
+
+var mrecBuf = [];
+var pTsk = new Task(mplaytask, this);
+var rTsk = new Task(mrectask, this);
+pTsk.interval = 50;
+rTsk.interval = 50;
+
+var mplayhead = 0;
 
 initForest();
 draw();
@@ -36,11 +45,18 @@ function draw()
 		glclearcolor(backColor[0], backColor[1], backColor[2], backColor[3]);
 		glclear();
 		
+		glcolor(mrecColor);
+		gllinewidth(3);
+		for(var j = 0; j < mrecBuf.length - 1; j++) {
+			moveto(mrecBuf[j].x, mrecBuf[j].y);
+			lineto(mrecBuf[j + 1].x, mrecBuf[j + 1].y);
+		}
+		
 		for(var i = 1; i <= maxNumber; i++) {
 			i = i % maxNumber;
 			if(!forest[i].isVisible)
 				continue;
-			
+				
 			moveto(forest[i].coord[0], forest[i].coord[1]);
 			
 			if(forest[i].isHold) {
@@ -278,6 +294,20 @@ function ssave()
 			dict.replace("ui::" + i + "::text", forest[i].text);
 		}
 	}
+	
+	var x = [];
+	var y = [];
+	dict.remove("mrec");
+	
+	for(var i = 0; i < mrecBuf.length; i++) {
+		x.push(mrecBuf[i].x);
+		y.push(mrecBuf[i].y);
+	}
+	
+	if(mrecBuf.length > 0) {
+		dict.replace("mrec::x", x);
+		dict.replace("mrec::y", y);
+	}
 }
 
 function sload()
@@ -297,6 +327,68 @@ function sload()
 			outlet(2, "add", i, forest[i].text);
 		}
 	}
+	
+	if(dict.contains("mrec")) {
+		mrecBuf = [];
+		var x = dict.get("mrec::x");
+		var y = dict.get("mrec::y");
+		
+		for(var i = 0; i < x.length; i++)
+			mrecBuf.push({x: x[i], y: y[i]});
+	}
+	
 	draw();
 	outlet(2, "done");
+}
+
+function mplaytask()
+{
+	var c = sketch.worldtoscreen(mrecBuf[mplayhead].x, mrecBuf[mplayhead].y, 0.03);
+	
+	forest[0].coord[0] = mrecBuf[mplayhead].x;
+	forest[0].coord[1] = mrecBuf[mplayhead].y;
+	move(c[0] + box.rect[0], c[1] + box.rect[1]);
+	mplayhead++;
+	
+	if(mplayhead == mrecBuf.length)
+		mplayhead = 0;
+}
+
+function mrectask()
+{
+	mrecBuf.push({x: forest[0].coord[0], y: forest[0].coord[1]});
+}
+
+function mclear()
+{
+	mplayhead = 0;
+	mrecBuf = [];
+	outlet(3, "rec", 0);
+	outlet(3, "play", 0);
+	draw();
+}
+
+function mplay(state)
+{
+	isMPlay = state;
+	if(state) {
+		mplayhead = 0;
+		forest[0].isGrabbed = false;
+		outlet(3, "rec", 0);
+		if(mrecBuf.length > 0)
+			pTsk.repeat();
+	}
+	else
+		pTsk.cancel();
+}
+
+function mrec(state)
+{
+	if(state) {
+		mrecBuf = [];
+		outlet(3, "play", 0);
+		rTsk.repeat();
+	}
+	else
+		rTsk.cancel();
 }
